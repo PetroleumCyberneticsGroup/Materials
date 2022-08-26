@@ -7,5 +7,5 @@ This directory contains Python scripts, i.e., "C-GA.py", "C-PSO.py", and "C-GD.p
 1. Define path of the output directory in the "C-GA.py", "C-PSO.py", or "C-GD.py" scripts, particularly in a variable called "out".
 2. Execute the runner scripts, i.e., "RunnerC-GA.py", "RunnerC-PSO.py", or "RunnerC-GD.py".
 
-# References
+# Reference
 [1] I. G. A. G. Angga, M. Bellout, P. E. S. Bergmo, P. A. Slotte, and C. F. Berg, “Collaborative optimization by shared objective function data,” 2022, (under review).
