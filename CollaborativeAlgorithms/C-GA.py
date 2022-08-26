@@ -8,14 +8,14 @@ import shutil
 import json
 
 
-out = "/home/igangga/CooperativeAlgorithms/PS3/GA"
-coop = str(sys.argv[1]) == "True"
+out = "/home/igangga/CollaborativeAlgorithms/ProblemSet1/GA"
+coop = str(sys.argv[1]) == "True" # This argument will decide to run either the collaborative or the non-collaborative GA.
 coop_str = str(sys.argv[2])
 run = int(sys.argv[3])
 
 if coop:
     if coop_str == "clone":
-        out = out + "/C-GA-I"
+        out = out + "/C-GA"
 else:
     out = out + "/NC-GA"
 out = out + "/Run" + str(run)
@@ -31,7 +31,7 @@ list_OF = [ModRas,
            ModRas,
            ModRas,
            ModRas]
-A = 0.0
+A = 10.0
 mR = 1.0
 mv = [[10.0,  10.0],
       [10.0,   7.5],
