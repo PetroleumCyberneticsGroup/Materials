@@ -8,12 +8,12 @@ import shutil
 import json
 
 
-out = "/home/igangga/CooperativeAlgorithms/PS3/PSO"
-coop = str(sys.argv[1]) == "True"
+out = "/home/igangga/CollaborativeAlgorithms/ProblemSet1/PSO"
+coop = str(sys.argv[1]) == "True" # This argument will decide to run either the collaborative or the non-collaborative PSO.
 run = int(sys.argv[2])
 
 if coop:
-    out = out + "/C-PSO-I"
+    out = out + "/C-PSO"
 else:
     out = out + "/NC-PSO"
 out = out + "/Run" + str(run)
@@ -29,7 +29,7 @@ list_OF = [ModRas,
            ModRas,
            ModRas,
            ModRas]
-A = 0.0
+A = 10.0
 mR = 1.0
 mv = [[10.0,  10.0],
       [10.0,   7.5],
