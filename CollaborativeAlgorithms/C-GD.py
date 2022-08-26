@@ -10,7 +10,7 @@ import json
 
 
 out = "/home/igangga/CollaborativeAlgorithms/ProblemSet1/GD"
-if !os.path.isdir(out):
+if not os.path.isdir(out):
     os.makedirs(out)
     os.mkdir(out + "/C-GD-I")
     os.mkdir(out + "/C-GD-II")
