@@ -9,7 +9,7 @@ import json
 
 
 out = "/home/igangga/CollaborativeAlgorithms/ProblemSet1/GA"
-coop = str(sys.argv[1]) == "True" # This argument will decide to run either the collaborative or the non-collaborative GA.
+coop = str(sys.argv[1]) == "True"   # This argument will decide to run either the collaborative or the non-collaborative GA.
 coop_str = str(sys.argv[2])
 run = int(sys.argv[3])
 
