@@ -2,7 +2,7 @@ import os
 
 
 coop = [True, False]
-coop_str = ["jump_before_move", "swap_before_move", "jump_after_move", "swap_after_move"]
+coop_str = ["jump", "swap"]
 nr = 1000
 list_args = []
 
