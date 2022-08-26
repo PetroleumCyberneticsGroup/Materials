@@ -9,7 +9,7 @@ import json
 
 
 out = "/home/igangga/CollaborativeAlgorithms/ProblemSet1/PSO"
-coop = str(sys.argv[1]) == "True" # This argument will decide to run either the collaborative or the non-collaborative PSO.
+coop = str(sys.argv[1]) == "True"   # This argument will decide to run either the collaborative or the non-collaborative PSO.
 run = int(sys.argv[2])
 
 if coop:
