@@ -9,20 +9,16 @@ import shutil
 import json
 
 
-out = "/home/igangga/CooperativeAlgorithms/PS3/GD"
-coop = str(sys.argv[1]) == "True"
-coop_str = str(sys.argv[2])
+out = "/home/igangga/CollaborativeAlgorithms/ProblemSet1/GD"
+coop = str(sys.argv[1]) == "True"   # This argument will decide to run either the collaborative or the non-collaborative GD.
+coop_str = str(sys.argv[2])         # This argument will decide which version of collaborative GD to run.
 run = int(sys.argv[3])
 
 if coop:
-    if coop_str == "jump_before_move":
+    if coop_str == "jump":
         out = out + "/C-GD-I"
-    elif coop_str == "swap_before_move":
+    elif coop_str == "swap":
         out = out + "/C-GD-II"
-    elif coop_str == "jump_after_move":
-        out = out + "/C-GD-III"
-    elif coop_str == "swap_after_move":
-        out = out + "/C-GD-IV"
 else:
     out = out + "/NC-GD"
 out = out + "/Run" + str(run)
@@ -47,7 +43,7 @@ list_OF_d = [ModRas_d,
              ModRas_d,
              ModRas_d,
              ModRas_d]
-A = 0.0
+A = 10.0
 mR = 1.0
 mv = [[10.0,  10.0],
       [10.0,   7.5],
@@ -267,19 +263,13 @@ def record_best():
 for i in range(max_itr):
     update_itr(i + 1)
 
-    if coop and coop_str == "jump_before_move":
+    if coop and coop_str == "jump":
         jump()
 
-    if coop and coop_str == "swap_before_move":
+    if coop and coop_str == "swap":
         swap()
 
     move()
-
-    if coop and coop_str == "jump_after_move":
-        jump()
-
-    if coop and coop_str == "swap_after_move":
-        swap()
 
     record_best()
 
