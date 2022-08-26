@@ -10,7 +10,7 @@ import json
 
 out = "/home/igangga/CollaborativeAlgorithms/ProblemSet1/GA"
 if !os.path.isdir(out):
-    os.mkdir(out)
+    os.makedirs(out)
     os.mkdir(out + "/C-GA")
     os.mkdir(out + "/NC-GA")
 
