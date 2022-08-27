@@ -14,7 +14,7 @@ if not os.path.isdir(out):
     os.makedirs(out)
     os.mkdir(out + "/C-GD-I")
     os.mkdir(out + "/C-GD-II")
-    os.mkdir(out + "/NC-GA")
+    os.mkdir(out + "/NC-GD")
 
 coop = str(sys.argv[1]) == "True"   # This argument will decide to run either the collaborative or the non-collaborative GD.
 coop_str = str(sys.argv[2])         # This argument will decide which version of collaborative GD to run.
